@@ -1,7 +1,7 @@
 #!/bin/bash
 # Author: Matt Nice,Matt Bunting
 
-LAUNCH_FILE=recordonly
+LAUNCH_FILE=recordonly.launch
 
 echo "----------------------------"
 if [[ $EUID == 0 ]];
