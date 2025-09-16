@@ -8,7 +8,7 @@ echo " - Installing ROS packages for recordonly..."
 
 LIBPANDA_SRC=$(cat /etc/libpanda.d/libpanda_src_dir)
 LIBPANDA_USER=$(cat /etc/libpanda.d/libpanda_usr)
-LAUNCH_FILE=recordonly
+LAUNCH_FILE=recordonly.launch
 
 source /home/$LIBPANDA_USER/.bashrc
 
