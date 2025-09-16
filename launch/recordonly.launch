@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!-- Controller not used -- only for recording -->
+
+<!-- filename params -->
+  <arg name="description" default="recordonly"/>
+
+	<arg name="hwil" default="true"/>
+
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!-- CAN_to_ROS launches, for vehicle interface, subs, rosbag record and safety_checks(?) -->
+<node pkg="can_to_ros" type="vehicle_interface" name="vehicle_interface" output="screen" respawn="true" respawn_delay="2" />
+  <node pkg="can_to_ros" type ="subs" name="subs" output="screen" if="$(arg hwil)">
+	</node>
+
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!-- ~Safety checks not needed, we are not running a controller ~ -->
+  <!--include file="$(find can_to_ros)launch/safety_checks.launch" / -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+<!-- recording the ros bag -->
+ <node pkg="can_to_ros" type ="rosbag_record.sh" name="bashscript2" output="screen" args="$(arg description) $(arg hwil)" />
+
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+
+</launch>
