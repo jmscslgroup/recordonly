@@ -1,1 +1,1 @@
-Records bagfiles and csv files only. No control.
+Recording data and bagfiles, but no control.
