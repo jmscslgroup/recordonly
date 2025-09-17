@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "=========================="
-echo "Starting App recordonly for {APP_PRETTY_NAME}"
+echo "Starting App recordonly for recordonly"
 
 
 systemctl start recordonly

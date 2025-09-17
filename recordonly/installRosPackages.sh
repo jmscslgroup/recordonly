@@ -7,7 +7,7 @@ if [[ $EUID == 0 ]];
   exit
 fi
 
-echo "Installing/Updating {APP_PRETTY_NAME} packages"
+echo "Installing/Updating recordonly packages"
 
 source ~/.bashrc
 

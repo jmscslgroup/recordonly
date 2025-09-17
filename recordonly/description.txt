@@ -1,1 +1,1 @@
-Recording data and bagfiles, but no control.
+Only recording data, no control at all.
