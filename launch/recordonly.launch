@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <launch>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <!-- Controller not used -- only for recording -->
+  <!-- Controller not used, only for recording -->
 
 <!-- filename params -->
   <arg name="description" default="recordonly"/>
-
-	<arg name="hwil" default="true"/>
+  <arg name="hwil" default="true"/>
 
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~ -->
